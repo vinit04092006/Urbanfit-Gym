@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UrbanFit Gym – Train Harder. Live Better.</title>
+<style>
+:root{--bg:#f6f7f9;--surface:#fff;--text:#111827;--muted:#4b5563;--accent:#f97316;--accent-text:#fff;--border:#e5e7eb;--hero:#111827;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c0d10;--surface:#16181d;--text:#f3f4f6;--muted:#9ca3af;--border:#262a33;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0c0d10;--surface:#16181d;--text:#f3f4f6;--muted:#9ca3af;--border:#262a33;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:10}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--surface);border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;padding:12px 20px}
+nav b{font-size:1.2rem;letter-spacing:.5px}nav b span{color:var(--accent)}
+nav div{display:flex;gap:16px;flex-wrap:wrap}
+nav a{color:var(--muted);font-size:.95rem}nav a:hover{color:var(--accent)}
+.hero{background:linear-gradient(135deg,#111827 0%,#7c2d12 100%);color:#fff;text-align:center;padding:100px 20px}
+.hero h1{font-size:clamp(2.2rem,7vw,4rem);line-height:1.1;margin:0 0 16px;text-transform:uppercase}
+.hero h1 span{color:var(--accent)}
+.hero p{max-width:540px;margin:0 auto 28px;color:#e5e7eb;font-size:1.1rem}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-text);padding:13px 28px;border-radius:10px;font-weight:700;border:0;cursor:pointer;font-size:1rem;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.alt{background:transparent;border:2px solid #fff;color:#fff;margin-left:8px}
+section{max-width:1000px;margin:0 auto;padding:64px 20px}
+h2{font-size:1.9rem;margin:0 0 28px;text-transform:uppercase}h2 span{color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:var(--accent)}
+.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted)}
+.icon{font-size:2rem;margin-bottom:10px}
+.price{font-size:2.2rem;font-weight:800;color:var(--accent);margin:8px 0}.price small{font-size:1rem;color:var(--muted);font-weight:400}
+.card ul{padding-left:18px;color:var(--muted);margin:12px 0 20px}
+.pop{border-color:var(--accent);position:relative}
+.pop::after{content:"Most popular";position:absolute;top:-12px;right:16px;background:var(--accent);color:var(--accent-text);font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:99px}
+.wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--border);border-radius:12px;min-width:480px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--border)}th{color:var(--accent)}td{color:var(--muted)}
+form{display:grid;gap:14px;max-width:560px}
+input,select{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--text);font:inherit}
+input:focus,select:focus{outline:2px solid var(--accent)}
+.err{color:#ef4444;font-size:.85rem;min-height:1em}#ok{color:#16a34a;font-weight:600}
+footer{text-align:center;color:var(--muted);padding:32px 20px;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<nav><b>URBAN<span>FIT</span></b><div><a href="#programs">Programs</a><a href="#plans">Plans</a><a href="#schedule">Schedule</a><a href="#join">Join</a></div></nav>
+
+<header class="hero">
+<h1>Train harder.<br><span>Live better.</span></h1>
+<p>Modern equipment, expert trainers and classes for every level. Your first week is on us.</p>
+<a class="btn" href="#join">Start free trial</a><a class="btn alt" href="#plans">See plans</a>
+</header>
+
+<section id="programs"><h2>Our <span>programs</span></h2>
+<div class="grid">
+<div class="card"><div class="icon">🏋️</div><h3>Strength Training</h3><p>Free weights and machines with guided programs.</p></div>
+<div class="card"><div class="icon">🔥</div><h3>HIIT &amp; Cardio</h3><p>High-energy group sessions to burn fat fast.</p></div>
+<div class="card"><div class="icon">🧘</div><h3>Yoga &amp; Mobility</h3><p>Improve flexibility, balance and recovery.</p></div>
+<div class="card"><div class="icon">🎯</div><h3>Personal Training</h3><p>One-on-one coaching built around your goals.</p></div>
+</div></section>
+
+<section id="plans"><h2>Membership <span>plans</span></h2>
+<div class="grid">
+<div class="card"><h3>Monthly</h3><div class="price">₹1,500<small>/month</small></div><ul><li>Full gym access</li><li>Locker room</li></ul><a class="btn" href="#join">Choose</a></div>
+<div class="card pop"><h3>Quarterly</h3><div class="price">₹3,900<small>/3 months</small></div><ul><li>Full gym access</li><li>Group classes</li><li>Fitness assessment</li></ul><a class="btn" href="#join">Choose</a></div>
+<div class="card"><h3>Yearly</h3><div class="price">₹12,000<small>/year</small></div><ul><li>Everything in Quarterly</li><li>2 PT sessions</li><li>Diet guidance</li></ul><a class="btn" href="#join">Choose</a></div>
+</div></section>
+
+<section id="schedule"><h2>Class <span>schedule</span></h2>
+<div class="wrap"><table>
+<tr><th>Time</th><th>Mon / Wed / Fri</th><th>Tue / Thu / Sat</th></tr>
+<tr><td>6:00 AM</td><td>HIIT</td><td>Strength</td></tr>
+<tr><td>8:00 AM</td><td>Yoga</td><td>Mobility</td></tr>
+<tr><td>6:00 PM</td><td>Strength</td><td>HIIT</td></tr>
+<tr><td>7:30 PM</td><td>Cardio Burn</td><td>Yoga</td></tr>
+</table></div></section>
+
+<section id="join"><h2>Join <span>UrbanFit</span></h2>
+<form id="f" novalidate>
+<div><input id="n" placeholder="Full name"><div class="err" id="en"></div></div>
+<div><input id="p" type="tel" placeholder="Phone number"><div class="err" id="ep"></div></div>
+<div><select id="s"><option value="">Select a plan</option><option>Monthly</option><option>Quarterly</option><option>Yearly</option><option>Free trial</option></select><div class="err" id="es"></div></div>
+<button class="btn" type="submit">Book my free trial</button>
+<div id="ok"></div>
+</form></section>
+
+<footer>© 2026 UrbanFit Gym · Open daily 5:30 AM – 10:00 PM · info@urbanfit.example</footer>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var n=document.getElementById('n').value.trim(),p=document.getElementById('p').value.replace(/\D/g,''),s=document.getElementById('s').value;
+  document.getElementById('en').textContent=n?'':'Please enter your name.';
+  document.getElementById('ep').textContent=p.length>=10?'':'Please enter a valid phone number.';
+  document.getElementById('es').textContent=s?'':'Please choose a plan.';
+  document.getElementById('ok').textContent='';
+  if(n&&p.length>=10&&s){document.getElementById('ok').textContent='You’re in! We’ll call you to confirm your trial.';this.reset();}
+});
+</script>
+</body>
+</html>
